@@ -6,6 +6,7 @@
    remote: List all repository hosts.
    -->
   <remote name="ngenetzky_gh" fetch="git://github.com/ngenetzky/" />
+  <remote name="dotphiles" fetch="git://github.com/dotphiles/" />
 
   <!--
    project: List all the repositories you want to fetch.
@@ -15,8 +16,10 @@
        "path": directory where git repository gets cloned/synced
    -->
 
-  <project name="dotfiles" remote="ngenetzky_gh" revision="master" path="dotfiles" />
-  <project name="dotphiles" remote="ngenetzky_gh" revision="master" path="dotphiles" />
+  <project name="dotfiles" remote="ngenetzky_gh" revision="master" path="dotfiles/ng-dotfiles" />
+  <project name="dotphiles" remote="ngenetzky_gh" revision="master" path="dotfiles/ng-dotphiles" />
+  <project name="dotphiles" remote="dotphiles" revision="master" path="tools/dotsync" />
+  <project name="dotsync" remote="dotphiles" revision="master" path="dotfiles/dotphiles" />
 
 </manifest>
 
