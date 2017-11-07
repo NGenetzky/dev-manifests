@@ -15,5 +15,8 @@
        "path": directory where git repository gets cloned/synced
    -->
 
+  <project name="dotfiles" remote="ngenetzky_gh" revision="master" path="dotfiles" />
+  <project name="dotphiles" remote="ngenetzky_gh" revision="master" path="dotphiles" />
+
 </manifest>
 
