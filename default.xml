@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default remote="ngenetzky_gh" revision="default"/>
+
+  <!--
+   remote: List all repository hosts.
+   -->
+  <remote name="ngenetzky_gh" fetch="git://github.com/ngenetzky/" />
+
+  <!--
+   project: List all the repositories you want to fetch.
+       "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced
+   -->
+
+</manifest>
+
