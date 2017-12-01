@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default remote="ngenetzky_gh" revision="default"/>
+  <default remote="ngenetzky_gh" revision="master"/>
 
   <!--
    remote: List all repository hosts.
@@ -16,10 +16,23 @@
        "path": directory where git repository gets cloned/synced
    -->
 
-  <project name="dotfiles" remote="ngenetzky_gh" revision="master" path="dotfiles/ng-dotfiles" />
-  <project name="dotphiles" remote="ngenetzky_gh" revision="master" path="dotfiles/ng-dotphiles" />
-  <project name="dotphiles" remote="dotphiles" revision="master" path="tools/dotsync" />
-  <project name="dotsync" remote="dotphiles" revision="master" path="dotfiles/dotphiles" />
+  <project path="home/.dotfiles"
+      remote="ngenetzky_gh" name="dotfiles"
+      revision="master"
+  />
+  <project path="home/.dotphiles"
+      remote="ngenetzky_gh" name="dotphiles"
+      revision="master"
+  />
+
+  <project path="lib/dotsync"
+      remote="dotphiles" name="dotsync"
+      revision="master"
+  />
+  <project path="lib/dotphiles"
+      remote="dotphiles" name="dotphiles"
+      revision="master"
+  />
 
 </manifest>
 
