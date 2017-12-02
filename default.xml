@@ -5,7 +5,10 @@
   <!--
    remote: List all repository hosts.
    -->
-  <remote name="ngenetzky_gh" fetch="git://github.com/ngenetzky/" />
+  <remote name="ngenetzky_gh"
+    fetch="git://github.com/ngenetzky/"
+    pushurl="ssh://git@github.com/ngenetzky/"
+  />
   <remote name="dotphiles" fetch="git://github.com/dotphiles/" />
 
   <!--
