@@ -6,10 +6,9 @@
    remote: List all repository hosts.
    -->
   <remote name="ngenetzky_gh"
-    fetch="git://github.com/ngenetzky/"
-    pushurl="ssh://git@github.com/ngenetzky/"
+    fetch="git://github.com/ngenetzky"
+    pushurl="ssh://git@github.com/ngenetzky"
   />
-  <remote name="dotphiles" fetch="git://github.com/dotphiles/" />
 
   <!--
    project: List all the repositories you want to fetch.
@@ -19,23 +18,13 @@
        "path": directory where git repository gets cloned/synced
    -->
 
-  <project path="src/dotfiles"
-      remote="ngenetzky_gh" name="dotfiles"
-      revision="master"
-  />
-  <project path="src/dotphiles"
-      remote="ngenetzky_gh" name="dotphiles"
-      revision="master"
-  />
+   <project path="project/dotfiles" remote="ngenetzky_gh" name="dotfiles"/>
+   <project path="project/iac" remote="ngenetzky_gh" name="iac"/>
+   <project path="project/shlib" remote="ngenetzky_gh" name="shlib"/>
 
-  <project path="lib/dotsync"
-      remote="dotphiles" name="dotsync"
-      revision="master"
-  />
-  <project path="lib/dotphiles"
-      remote="dotphiles" name="dotphiles"
-      revision="master"
-  />
+   <!-- <project path="project/dev-shell" remote="ngenetzky_gh" name="dev-shell"/> -->
+   <!-- <project path="project/etckeeper-base-etc" remote="ngenetzky_gh" name="etckeeper-base-etc"/> -->
+   <!-- <project path="project/etckeeper-base-home-config" remote="ngenetzky_gh" name="etckeeper-base-home-config"/> -->
 
 </manifest>
 
